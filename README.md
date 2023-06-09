@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Two Way Binding 
 * Integrate formArray
 * Checkbox functionality
-* Update value using patchValue
+* Update value using patchValue 
 
 ## Development server
 
