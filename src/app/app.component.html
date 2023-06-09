@@ -1,1 +1,51 @@
 <h1>Reactive form</h1>
+<form [formGroup]="user" (submit)="onSubmit()">
+  <span>Name should be start with 'pra'</span>
+
+  <br />
+
+  <input type="text" formControlName="fname" placeholder="First Name" />
+  <span style="color: red" *ngIf="fname?.invalid && fname?.dirty">
+    Please Enter Name
+  </span>
+
+  <br />
+  <br />
+
+  <input type="text" formControlName="city" placeholder="City" />
+
+  <br />
+  <br />
+
+  <input type="radio" formControlName="gender" value="male" /> Male
+  <input type="radio" formControlName="gender" value="female" /> FeMale
+
+  <br />
+  <br />
+
+  <select formControlName="state">
+    <option value="mp">MP</option>
+    <option value="up">UP</option>
+  </select>
+
+  <br />
+  <br />
+
+  <div formArrayName="address" *ngFor="let itm of addressGroup?.controls; let i = index">
+      <div [formGroupName]="i">
+          <input type="text" name="addressName" formControlName="addressName" placeholder="Address">
+      </div>
+  </div>
+
+  <br/>
+  <br/>
+
+  <button type="submit" [disabled]="user.invalid">Submit</button>
+  <br/>
+  <button (click)="addCityValidation()">Add City Validation</button>
+  <button (click)="removeCityValidation()">Remove Citi Validation</button>
+  <br/>
+  <button (click)="updateValueOfCity()">Update Value For City</button> 
+  <br/>
+  <button (click)="addAddress()">Add Address</button>
+</form>
