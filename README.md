@@ -10,7 +10,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Radio, Dropdown, Checkbox fields
 * Two Way Binding 
 * Integrate formArray
-* checkbox functionality
+* Checkbox functionality
+* Update value using patchValue
 
 ## Development server
 
