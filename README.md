@@ -5,11 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## What we covered
 * Custom Validation
 * Normal Validation
-* Radio, Dropdown, Checkbox
-* Two Way Binding
 * Dynamic Add Validation
 * Dynamic Remove Validation
-
+* Radio, Dropdown, Checkbox fields
+* Two Way Binding 
+* Integrate formArray
+* checkbox functionality
 
 ## Development server
 

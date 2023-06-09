@@ -40,6 +40,13 @@
   <br/>
   <br/>
 
+  <div *ngFor="let itm of hobby">
+      <input type="checkbox" [value]="itm.value" [checked]="itm.isSelected" (change)="onChange($event)">{{itm.label}}
+  </div>
+
+  <br/>
+  <br/>
+
   <button type="submit" [disabled]="user.invalid">Submit</button>
   <br/>
   <button (click)="addCityValidation()">Add City Validation</button>
